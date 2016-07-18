@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.brody.faddingshapesstyle.FaddingShapesStyle">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/shapeCounter"
+        android:textSize="@dimen/abc_text_size_menu_material" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STYLE"
+        android:id="@+id/styleb"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/abc_text_size_medium_material" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RECT"
+        android:id="@+id/rectb"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/circb"
+        android:layout_toStartOf="@+id/circb" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CIRC"
+        android:id="@+id/circb"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:layout_below="@+id/shapeArea"
+        android:layout_toLeftOf="@+id/clearb"
+        android:layout_toStartOf="@+id/clearb" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLEAR"
+        android:id="@+id/clearb"
+        android:layout_alignBottom="@+id/rectb"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="@dimen/abc_text_size_medium_material" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rectb"
+        android:layout_below="@+id/shapeCounter"
+        android:id="@+id/shapeArea">
+    </RelativeLayout>
+
+</RelativeLayout>
